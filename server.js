@@ -14,3 +14,8 @@ app.listen(port, () => {
   app.get('/login', function (req, res){
     res.render('login')
 })
+
+app.get('/cadastro', function (req, res){
+  res.render('cadastro')
+})
+
