@@ -5,8 +5,8 @@ const path = require('path')
 
 app.use(express.static(path.join(__dirname, '/public')))
 app.set('view engine', 'ejs');
-app.get('/index', function (req, res){
-    res.render('index')
+app.get('/home', function (req, res){
+    res.render('home')
 })
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
@@ -17,5 +17,14 @@ app.listen(port, () => {
 
 app.get('/cadastro', function (req, res){
   res.render('cadastro')
+})
+
+
+app.get('/cadastrooficina', function (req, res){
+  res.render('cadastrooficina')
+})
+
+app.get('/interna', function (req, res){
+  res.render('interna')
 })
 

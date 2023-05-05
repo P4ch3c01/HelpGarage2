@@ -20,8 +20,9 @@ p, li {
 /* Barra de Navegação */
 
 header, .navbar {
-    background-color: #353D41;
+    background-color: #f9f9f9;
     height: 100px;
+
 }
 
 #nav-conatiner {
@@ -31,19 +32,21 @@ header, .navbar {
 
 #logo {
     width: 75px;
+
 }
 
 .navbar-brand {
     padding: 0;
-    color: #fff;
+    color: black;
 }
 
 .navbar-hover {
-    color: #fff;
+    color: #EF3340;
 }
 
 #navbar-links a {
-    color: #fff;
+    color: black;
+    font-weight: bolder;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -52,6 +55,19 @@ header, .navbar {
 
 .textocentral {
     text-align: center;
+}
+
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #EF3340;
+    transition: 0.4s
+}
+.nav-item:hover::after {
+    width: 100%
 }
 
 /* Texto de apresentação */
@@ -114,3 +130,4 @@ header, .navbar {
     text-decoration: none;
     padding: 15px;
 }
+
